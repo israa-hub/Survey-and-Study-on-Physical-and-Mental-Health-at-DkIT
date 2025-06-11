@@ -1,0 +1,57 @@
+---
+title: "CA 1 Study Design"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Loading the data
+```{r}
+data = read.csv("D:\\Kaylee\\Kuliah\\Study Design\\data.csv")
+#data
+```
+
+## Testing the model for Physical Health
+```{r message=FALSE, warning=FALSE}
+library(car)
+#creating the full model
+physical_model=lm(data$Physical.Health.Rating~data$Sleep..hrs.+data$Smoke...Vape+
+     data$Exercise.per.week..days.+data$GPA)
+summary(physical_model)
+
+#checking the added variable plot
+avPlots(physical_model)
+
+#Not satisfied with the added variable plot, so proceed with reduced model (single linear model)
+slm=lm(data$Physical.Health.Rating~
+         data$Exercise.per.week..days.)
+summary(slm)
+
+#Checking the AIC and BIC
+AIC(physical_model,slm)
+BIC(physical_model,slm)
+
+#both AIC and BIC prefer the reduced model
+```
+
+## Testing the model for Mental Health
+```{r}
+#creating the  full model
+mental_model=lm(data$Mental.Health.Rating~data$Mental.Health.Prioritization+data$Depression.Scale+data$Suicide.Thoughts)
+summary(mental_model)
+#checking the added variable plot
+avPlots(mental_model)
+
+#Not satisfied with the added variable, proceed with the reduced model without Suicide
+reduced_model = lm(data$Mental.Health.Rating~data$Depression.Scale)
+summary(reduced_model)
+
+#Checking the AIC and BIC
+AIC(mental_model,reduced_model)
+BIC(mental_model,reduced_model)
+#Both AIC and BIC prefer reduced model
+```
