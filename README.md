@@ -35,7 +35,7 @@ It explores the **wellbeing of third-level students**, focusing on how DkIT stud
 
 ## 📌 Notes
 
-- 📄 For a detailed explanation of the research process, methods, and findings, please refer to the report: **`joint_project_israa.docx`**
+- 📄 For a detailed explanation of the research process, methods, and findings, please refer to the report: **`Study Design CA.pdf`**
 - 🔍 For insights into how we cleaned and analysed the data, check the R Markdown file: **`Study Design CA.Rmd`**
-- 📊 The file **`CA1.docx`** includes graphs used for presenting the survey results clearly and effectively.
+- 📊 The file **`CA1.r`** includes graphs used for visualisations created for this analysis.
 - 🚨 **Disclaimer:** This is an undergraduate research project created for academic purposes. Findings and interpretations are limited to the sample collected and may not be generalisable.
