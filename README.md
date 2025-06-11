@@ -1,6 +1,6 @@
 # Survey and Study on Physical and Mental Health at DkIT
 
-# 🎓 Student Wellbeing at DkIT – Research Project
+# 🎓 Student Wellbeing at DkIT – Research Group Project
 
 ### 📚 University Project –Study Desing Module
 
