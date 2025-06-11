@@ -25,7 +25,7 @@ It explores the **wellbeing of third-level students**, focusing on how DkIT stud
 | `Dirty Data.csv`          | CSV      | Raw survey data exported directly from Google Forms, prior to cleaning. |
 | `Clean Data.csv`          | CSV      | Survey data cleaned and formatted using Excel, used for final analysis. |
 | `Study Design CA.Rmd`     | RMD File | Main R Markdown file with complete analysis, including research background, data preparation, and interpretation. |
-| `CA1.docx`                | Word Doc | Report document with graphs and visualisations created from the survey results. |
+| `CA1.r`                | R File | R file includes all visualisations created for this analysis |
 | `Study Design CA.pdf`| Pdf Doc | Final written report documenting the study methodology, research question, hypothesis, and key insights. |
 
 ---
